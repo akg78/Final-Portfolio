@@ -1,7 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/aileron');
 *{
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'Aileron', sans-serif;
 }
 
 body{
@@ -23,8 +25,8 @@ nav .navright{
 a{
     text-decoration: none;
 }
-a :hover{
-    padding: 10px 15px 10px 15px;
+a:hover{
+    padding: 5px 10px 5px 10px;
     background-color: #52ab98;
     border-radius: 10px;
 }
@@ -55,10 +57,11 @@ header .pcir{
     margin-left: 20px;
 
 }
-header .pcir p{
-    font-size: 18px;
-    margin-top: 8px;
-    margin-left: 20px;
+header .pcir h1{
+    font-size: 25px;
+    margin-top: 4px;
+    margin-left: 10px;
+    letter-spacing: 1.5;
 }
 header .circle{
     width: 35px;
@@ -70,29 +73,94 @@ header .img img{
     height: 70%;
     width: 100%;
     scale: 2;
+
+}
+header .icon ul{
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    border: 1px solid wheat;
+    margin-top: 60x;
+    padding-left: 10px;
+
+}
+.icon ul li img{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;  
+}
+.icon ul li .insta{
+    border: 2px solid white;  
+}
+.icon ul li .git{
+    border: 1px solid white;
+}
+.icon ul li .linkedin{
+    border: 2px solid white;
+}
+ header div .world{
+    height: 500px;
+    width: 500px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background-color: #2b6777;
+}
+.world span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    font-size: 35px;
+    font-style: italic;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    /* border: 1px solid white; */
+}
+.world h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #52ab98;
+    padding-left: 80px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    padding-right: 20px;
+    letter-spacing: 1px;
     
+}
+.world h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+    padding-right: 35px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.world .p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding-left: 430px;
+    letter-spacing: 1px;
+}
+.world .p2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding-left: 200px;
+    letter-spacing: 1px;
 }
 
-#git{
-    height: 50px;
-    width: 50px;
-    display: inline;
-    justify-content: space-between;
-    margin-top: 400px;
-    
-}
-#insta{
-    height: 50px;
-    width: 50px;
-    display: inline;
-    justify-content: space-between;
-}
-#linkedin{
-    height: 50px;
-    width: 50px;
-    display: inline;
-    justify-content: space-between;
-}
 main{
     border: 2px solid white;
 }
@@ -122,9 +190,12 @@ main{
 
 
 
+
+
 footer{
     background-color: #52ab98;
     padding-top: 100px;
+    width: 100%;
     border-radius: 10px;
     border: 2px solid white;
 }
