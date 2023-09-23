@@ -14,7 +14,6 @@ nav{
     position: relative;
     width: 100%;
     height: 100px;
-    /* border: 2px solid white; */
 }
 
 nav .navright{
@@ -23,11 +22,10 @@ nav .navright{
     align-items: center;
     height: 100%;
     gap: 30px;
-    /* border: 2px solid blue; */
 }
 nav .navright p:hover{
     scale: 1.4;
-    color: #eea302;
+    color: #e6d615;
 }
 a {
     text-decoration: none;
@@ -37,7 +35,6 @@ a {
 header{
     width: 100%;
     height: 80vh;
-    /* border: 2px solid white; */
 }
 
 .img{
@@ -50,7 +47,6 @@ header{
     overflow: hidden;
     height: 450px;
     width: 300px;
-    /* border: 1px solid white; */
     background-color: #2b6777;
     
 }
@@ -123,7 +119,6 @@ header .icon ul{
     font-style: italic;
     margin-bottom: 10px;
     letter-spacing: 1px;
-    /* border: 1px solid white; */
 }
 .world h1{
     display: flex;
@@ -172,41 +167,67 @@ header .icon ul{
     background-color: #52ab98;
     margin-left: 645px;
     font-size: 20px;
-   
-   
+    
 }
+header #boder{
+   position: relative;
+   margin-top: 120px;
+}
+header #boder .img-fluid{
+    width: 100%;
+    height: auto;
+}
+header #boder img{
+    vertical-align: middle;
+    border-style: none;
+}
+
 
 main{
-    /* border: 2px solid white; */
     display: flex;
-
 }
 .maindiv{
-    /* border: 2px solid white; */
     flex: 2.5;
 }
 .maindiv h1{
+    display: inline;
+    text-wrap: wrap;
+    margin-left: 455px;
     color: #52ab98;
     text-align: center;
-    margin-top: 60px;
     font-size: 60px;
 }
+.maindiv h1:hover{
+    color: #e6d615;
+    cursor: pointer;
+    transition: 0.8s;
+}
 main .animation{
+    position: absolute;
     height: 200px;
     width: 50px;
     background-color: #eea302;
-    display: flex;
     border-radius: 50px;
-    margin-left: 20px;
-    border: 2px solid white;
-    
+    animation: moveUp 2s infinite;
+    margin-left: 60px;
+}
+@keyframes moveUp{
+    0%{margin-top: 0px;}
+    50%{margin-top: 500px;}
+    100%{margin-top: 0px;}
+
 }
 
 main section h2 {
    text-align: center;
    color: #52ab98;
    font-size: 30px;
-   
+   margin-top: 150px;
+}
+main section h2:hover{
+    color: #e6d615;
+    cursor: pointer;
+    transition: 0.8s;
 }
 main section h2 p{
     font-size: 15px;
@@ -217,7 +238,7 @@ main section h2 p{
 
 }
 main section h2 #year{
-    margin-left: 100px;
+    margin-left: 175px;
     letter-spacing: 2px;
 }
 main section h2 span{
@@ -231,6 +252,11 @@ main section h3{
     margin-top: 100px;
     font-size: 30px;
     margin-left: 20px;
+}
+main section h3:hover{
+    color: #e6d615;
+    cursor: pointer;
+    transition: 0.8s;
 }
 main section h3 p{
     font-size: 15px;
@@ -247,9 +273,129 @@ main section h3 #experience span{
     color: #52ab98;
     margin-left: 30px;
 }
+main #fly{
+    position: relative;
+    margin-top: 200px;
+ }
+ main #fly .flying-kite{
+    width: 100%;
+    height: auto;
+ }
+ main #fly img{
+    vertical-align: middle;
+    border-style: none;
+ }
+main #projects{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 500px;
+}
+main section .clock{
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation: movieSquare 4s backwards infinite;
 
 
+}
+@keyframes movieSquare{
+    0%{left: 0px;}
+    50%{left: 950px;}
+    100%{left: 0px;}
 
+}
+main section .analog{
+    position: absolute;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: 250px;
+    background-color: #e6d615;
+    animation: movieSquareTwo 6s forwards infinite;
+    
+}
+@keyframes movieSquareTwo{
+    0%{left: 0px;}
+    50%{left: 950px;}
+    100%{left: 0px;}
+}
+main a{
+    position: absolute;
+    align-items: center;
+    margin-top: 255px;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+}
+main a:hover{
+    color: #e6d615;
+    cursor: pointer;
+    transition: 1s;
+}
+main #kite{
+    position: relative;
+    margin-top: 200px;
+ }
+ main #kite .png-kite{
+    width: 100%;
+    height: auto;
+ }
+ main #kite img{
+    vertical-align: middle;
+    border-style: none;
+ }
+main #contact .yellow-box{
+    margin-left: 150px;
+    height: 500px;
+    width: 450px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px solid #52ab98;
+}
+main #contact .yellow-box .container h2{
+    color: #e6d615;
+    margin-right: 30px;
+    margin-top: 5px;
+
+    
+}
+input[type="text"],
+input[type="email"],
+input[type="text"],
+textarea,
+select{
+    width: 62.5%;
+    padding: 12px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+    border: 2px solid #52ab98;
+    background-color: #111111;
+}
+main #contact .yellow-box .container #message{
+    padding: 25px;
+    width: 58%;
+    height: 60px;
+}
+input[type="send message"]{
+    background-color: #52ab98;
+    height: 20px;
+    padding: 15px;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 13px;
+    border: none;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+main #contact .yellow-box .container .submitButton{
+    letter-spacing: 1px;
+    font-size: 15px;
+}
 aside{
     flex: 1;
     float: right;
@@ -257,18 +403,18 @@ aside{
     margin-left: 10px;
     padding: 10px;
     background-color: #2b6777;
-    height: 1000px;
-    /* border: solid 2px red; */
+    height: 2370px;
+    border-top-left-radius: 25px;
 }
 aside #box{
     height: 100px;
-    width: 100%;
-    background-color: #eea302;
-    align-items: center;
+    width: 100px;
+
+    background-color: white;
 }
 aside h2{
     margin-bottom: 200px;
-    margin-top: 200px;
+    margin-top: 90px;
     font-size: 25px;
     margin-left: 35px;
 }
@@ -295,7 +441,13 @@ aside h2 .photoshop{
     border-radius: 10px;
     margin-left: -14px;
     background-color: #eea302;
+    transition: linear 2s ease-in;
 
+}
+aside h2 .photoshop:hover{
+    background-color: white;
+    
+    
 }
 aside h2 .illustrator{
     height: 20px;
@@ -387,16 +539,24 @@ aside h3 #js #javascript{
 
 
 
+
 footer{
-    display: flex;
     background-color: #52ab98;
     padding-top: 100px;
     width: 100%;
     border-radius: 10px;
-    border: 2px solid white;
 }
 footer .foot{
     justify-content: center;
     display: flex;
-    
+    align-items: center;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+footer .heart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
