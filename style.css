@@ -313,8 +313,12 @@ main section .analog{
 }
 main a{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-left: 500px;
     align-items: center;
-    margin-top: 255px;
+    text-align: center;
+    margin-top: 170px;
     font-size: 25px;
     font-weight: 500;
     text-decoration: none;
@@ -400,22 +404,57 @@ aside #box{
     position: absolute;
     height: 500px;
     width: 440px;
-    margin-right: 100px;
-    margin-top: 900px;
-    background-color: #52ab98;
+    margin-top: 920px;
+    /* background-color: #2b6777; */
+    border: 2px solid #2b6777;
+}
+aside #box dl h3{
+font-size: 15px;
+margin-top: 50px;
+color: #e6d615;
+}
+aside #box dl dt{
+    margin-left: 20px;
+    margin-top: 25px;
+    font-weight: 500;
+    color: #e6d615
+}
+aside #box dl dd{
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 5px;
+    word-spacing: 2px;
+    direction: ltr;
+    max-width: 52ch;
+    text-wrap: wrap;
+    font-weight: 400;
+}
+aside #box ul{
+    color: #e6d615;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+aside #box ul li{
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 500;
+    margin-top: 8px;
+    font-weight: 500;
+    word-spacing: 1px;
 }
 aside #map{
     position: absolute;
-    height: 500px;
-    width: 440px;
+    height: 300px;
+    width: 430px;
     margin-right: 100px;
-    margin-top: 1720px;
-    background-color: #52ab98;
+    margin-top: 1820px;
+    border: 2px solid #2b6777;
 }
 aside h2{
-    position: sticky;
-    margin-bottom: 200px;
-    margin-top: 90px;
+    position: relative;
+    margin-bottom: -500px;
+    margin-top: 420px;
     font-size: 25px;
     margin-left: 35px;
 }
